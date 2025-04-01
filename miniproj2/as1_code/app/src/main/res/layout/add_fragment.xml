@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Movie Name EditText -->
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Title"
+        android:background="@drawable/bg"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Movie Title"/>
+
+    <!-- Director Name EditText -->
+    <EditText
+        android:id="@+id/dname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Director Name"
+        android:background="@drawable/bg"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Director Name"/>
+
+    <!-- Genre EditText -->
+    <EditText
+        android:id="@+id/g"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Genre"
+        android:background="@drawable/bg"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Movie Genre"/>
+
+    <!-- Release Year EditText -->
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Release Year"
+        android:background="@drawable/bg"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Release Year"/>
+
+    <!-- Status EditText -->
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Status"
+        android:background="@drawable/bg"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Movie Status"/>
+
+    <!-- Edit Button -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:padding="10dp"/>
+</LinearLayout>

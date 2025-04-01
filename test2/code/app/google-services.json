@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "485491907884",
+    "project_id": "androiduitesting-57fb2",
+    "storage_bucket": "androiduitesting-57fb2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485491907884:android:0d333624d5247e79f1a089",
+        "android_client_info": {
+          "package_name": "com.example.androiduitesting"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtlBnXryxfsW7yH-vUVYXInZWfpVweL1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

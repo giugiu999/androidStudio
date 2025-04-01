@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 1) Common Space -->
+    <item
+        android:id="@+id/nav_common_space"
+        android:title="@string/nav_common_space"
+        android:icon="@drawable/ic_followees"
+        app:showAsAction="always" />
+
+    <!-- 2) Followed Moods -->
+    <item
+        android:id="@+id/nav_followees_moods"
+        android:title="@string/nav_followees_moods"
+        android:icon="@drawable/ic_mood"
+        app:showAsAction="always" />
+
+    <!-- 3) Following Users -->
+    <item
+        android:id="@+id/nav_following_users"
+        android:title="@string/nav_following_users"
+        android:icon="@drawable/ic_handshakes"
+        app:showAsAction="always" />
+
+    <!-- 4) Mood Map -->
+    <item
+        android:id="@+id/nav_mood_map"
+        android:title="@string/nav_mood_map"
+        android:icon="@drawable/ic_map"
+        app:showAsAction="always" />
+
+    <!-- 5) My Profile -->
+    <item
+        android:id="@+id/nav_profile"
+        android:title="@string/nav_profile"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="always" />
+
+</menu>

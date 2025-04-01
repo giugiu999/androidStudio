@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/rounded_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#ffffff" /> <!-- 背景色白色 -->
+    <corners android:radius="8dp" /> <!-- 圆角半径 -->
+    <elevation android:elevation="2dp" /> <!-- 添加阴影效果 -->
+</shape>
+

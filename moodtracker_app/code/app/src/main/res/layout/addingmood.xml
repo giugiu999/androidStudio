@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Back Button -->
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_media_previous"
+                android:layout_gravity="start"/>
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:fontFamily="sans-serif-black"
+                android:text="ADDING MOOD"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Submit (Or store it offline upload later)" />
+
+            <!-- Select Emotion (Dropdown) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Emotion:"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:id="@+id/emotionSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:padding="8dp" />
+
+            <!-- Reason -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reason (Max 200 char):"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/reasonEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter reason"
+                android:maxLength="200"
+                android:inputType="text"
+                android:background="@android:drawable/edit_text" />
+
+            <!-- Social Situation -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Social Situation:"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:id="@+id/socialSituationSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:padding="8dp" />
+
+            <!-- Location -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location:"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/locationspinner"
+                android:background="@android:drawable/btn_dropdown"
+                android:text="Include location?"
+                android:padding="8dp"/>
+            <!-- Privacy Level -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy:"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:id="@+id/privacySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:padding="8dp" />
+
+            <!-- Photo Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <!-- ImageView -->
+                <ImageView
+                    android:id="@+id/photoImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/darker_gray"
+                    android:contentDescription="Photo preview"
+                    android:layout_marginEnd="10dp" />
+
+                <!-- Button -->
+                <Button
+                    android:id="@+id/addPhotoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Take Photo" />
+            </LinearLayout>
+
+            <!-- Submit Button -->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/menu_bottom_navigation"
+        app:labelVisibilityMode="labeled"
+        app:itemHorizontalTranslationEnabled="false"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
